@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+body,
+html {
+    font-family: "Montserrat", serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff0f5;
+}
+
+.circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: #f8e1e7;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.circle p {
+    margin: 20px 0;
+    font-size: 18px;
+    color: #D84040;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 70px;
+    border: none;
+    border-radius: 20px;
+    background-color: #D84040;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background-color: #C73838;
+    transform: scale(1.05);
+}
+
+
+/* Responsive adjustments */
+
+@media (max-width: 480px) {
+    body,
+    html {
+        padding: 0 10px;
+    }
+    .circle {
+        width: 90%;
+        height: auto;
+        /* Adapt to content */
+        padding: 15px;
+    }
+    .circle p {
+        font-size: 16px;
+        margin: 15px 0;
+    }
+    button {
+        padding: 10px 40px;
+        font-size: 14px;
+    }
+}
